@@ -2,7 +2,7 @@
 var position = {x: 0, y: window.innerHeight/2};
 var counter = 0;
 var minFontSize = 9;
-var angleDistortion = 0;
+//var angleDistortion = 0;
 var letters = "these birds freighted with ancient purpose mark our skies as they pass overhead but their windswept fricatives are mere whispers as baneful smoke convulses from the stricken ground that has been blackened by those who born wingless baulk at flight ";
 
 var canvas;
@@ -21,7 +21,7 @@ function init() {
   canvas.addEventListener('mouseout',  mouseUp,  false);  
   canvas.addEventListener('dblclick', doubleClick, false);
   
-  window.onresize = function(event) {
+  window.onresize = function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
   }
@@ -103,6 +103,6 @@ function textWidth( string, size ) {
     return context.mozMeasureText( string );
   }
   
- };
+ }
 
 init();

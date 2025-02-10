@@ -1,4 +1,4 @@
-@import "compass/css3";
+
 
 /* UNIVERSAL STYLES */
 
@@ -41,6 +41,7 @@ header nav a{
 
 
 
+
 /* HOME PAGE PARALLAX*/
 
 .caption {
@@ -55,6 +56,8 @@ header nav a{
     color: white;
     text-transform: uppercase;
   }
+
+
   .sub-caption {
     position: absolute;
     left: 0;
@@ -86,7 +89,7 @@ header nav a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/parallax-one.jpg");
+    background-image: url(../images/parallax-one.jpg);
   
 }
 
@@ -248,7 +251,7 @@ input {
 /* Fix contact form tablets and phones */
 @media (max-width: 480px) {
   .half {
-     width: 100%; 
+     width: 90%; 
      float: none;
      margin-bottom: 0; 
   }
@@ -259,3 +262,70 @@ input {
       background-attachment: scroll;
     }
   }
+/* Stop it looking shit on mobile */
+@media (max-width: 480px) {
+    header {
+        position: fixed;
+        z-index: 1;
+        background-color: #40698d;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+    
+    
+    
+    header h3 {
+        display: none;
+    }
+
+    header nav a{
+        color: white;
+        font-family: 'Merriweather', serif;
+        list-style-type: none;
+        text-decoration: none;
+ 
+    
+    }
+    .caption {
+          position: absolute;
+            left: 0;
+            top: 60%;
+            width: 100%;
+            font-family: 'Raleway', sans-serif;
+            font-size: 30pt;
+            text-align: center;
+            letter-spacing: 2px;
+            color: white;
+            text-transform: uppercase;
+    }
+
+
+
+    .parallaxFeatureText  {
+        
+        margin: 5% 5% 5% 5%;
+    }
+    .parallaxLatestText {
+        margin: 5% 5% 5% 5%;
+    }
+    footer p {
+        display: none;
+    }
+    footer {
+        width:  100%;
+        display: inline-flex;
+        justify-content: center;
+        
+    }
+    footer nav a {
+        color: white;
+        font-family: 'Merriweather', serif;
+        list-style-type: none;
+        text-decoration: none;
+        
+        
+        
+        
+    }
+}
