@@ -1,0 +1,261 @@
+@import "compass/css3";
+
+/* UNIVERSAL STYLES */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    z-index: 1;
+    background-color: #40698d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h3 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+
+
+header nav a{
+    color: white;
+    font-family: 'Merriweather', serif;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 20px;
+
+}
+
+
+
+/* HOME PAGE PARALLAX*/
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50pt;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+  }
+  .sub-caption {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .first-character {
+    color: #d96031;
+    font-size: 24pt;
+    font-weight:400; 
+    float: left; 
+    line-height: 40px; 
+    padding-right: 8px; 
+    padding-left: 3px;
+}
+
+  
+.parallaxImageOne {
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/parallax-one.jpg");
+  
+}
+
+.parallaxFeatureText {
+    position: relative;
+    margin: 5% 22% 5% 22%;
+}
+
+.parallaxFeatureText a:link {
+    color: #40698d
+}
+.parallaxFeatureText a:visited {
+    color: #40698d
+}
+.parallaxFeatureText a:hover {
+    color: #40698d
+}
+
+.parallaxImageTwo {
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/parallax-two.jpg");
+    
+}
+.parallaxLatestText {
+    position: relative;
+    margin: 5% 22% 5% 22%;
+}
+
+.parallaxLatestText a:link {
+    color: #40698d
+}
+.parallaxLatestText a:visited {
+    color: #40698d
+}
+.parallaxLatestText a:hover {
+    color: #40698d
+}
+
+.parallaxImageThree {
+    min-height: 400px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/parallax-three.jpg");
+}
+
+
+
+
+
+/*FOOTER */
+ 
+footer {
+
+    background-color: #40698d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer p {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 0.75em;
+    margin-left: 20px;
+    
+}
+
+
+footer nav a {
+    color: white;
+    font-family: 'Merriweather', serif;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 20px;
+
+}
+
+/* CONTACT FORM */
+
+.parallaxContactForm {
+    position: relative;
+}
+
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 10px auto;
+}
+   
+textarea {
+    border: 1px solid lightgrey; 
+    border-radius: 5px;
+    height: 112px;
+    outline: 2px;
+    padding: 1em;
+    display: block;
+    width: 80%;
+    float: right;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    resize: none;
+}
+input {
+    border: 1px solid lightgrey; 
+    border-radius: 5px;
+    outline: 2px;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    resize: none;
+}
+ 
+#input-submit {
+    border: 0;
+      color: white; 
+      background: #d96031;
+      cursor: pointer;
+      margin: auto;
+   }
+
+ .half {
+   float: left;
+   width: 48%;
+   margin-bottom: 1em;
+ }
+ 
+ .right { width: 50%; }
+ 
+ .left {
+      margin-right: 2%; 
+ }
+ /* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/* RESPONSIVE FOR MOBILE ETC */
+
+/* Fix contact form tablets and phones */
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .parallaxImageOne, .parallaxImageTwo, .parallaxImageThree, .parallaxFeatureText, .parallaxLatestText, .parallaxContactForm {
+      background-attachment: scroll;
+    }
+  }
