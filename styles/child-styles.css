@@ -13,7 +13,7 @@ h1 {
     font-size: 30pt;
     text-align: center;
     letter-spacing: 2px;
-    color: #40698d;
+    color: #158080;
     text-transform: uppercase;
   }
 
@@ -22,7 +22,7 @@ h2 {
     font-size: 25pt;
     text-align: center;
     letter-spacing: 2px;
-    color: #40698d;
+    color: #158080;
     text-transform: uppercase;
   }
 
@@ -36,7 +36,7 @@ h3 {
 header {
     position: fixed;
     z-index: 10;
-    background-color: #40698d;
+    background-color: #158080;
     width: 100%;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ a {
  
 footer {
     position: sticky;
-    background-color: #40698d;
+    background-color: #158080;
     width: 100%;
     display: flex;
     align-items: center;

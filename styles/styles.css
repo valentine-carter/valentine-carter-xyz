@@ -14,7 +14,7 @@ body, html {
 header {
     position: fixed;
     z-index: 1;
-    background-color: #40698d;
+    background-color: #158080;
     width: 100%;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ header nav a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/parallax-one.jpg);
+    background-image: url(../images/website-background-image.jpeg);
   
 }
 
@@ -99,13 +99,13 @@ header nav a{
 }
 
 .parallaxFeatureText a:link {
-    color: #40698d
+    color: #158080
 }
 .parallaxFeatureText a:visited {
-    color: #40698d
+    color: #158080
 }
 .parallaxFeatureText a:hover {
-    color: #40698d
+    color: #158080
 }
 
 .parallaxImageTwo {
@@ -115,7 +115,7 @@ header nav a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/parallax-two.jpg");
+    background-image: url("../images/website-background-image.jpeg");
     
 }
 .parallaxLatestText {
@@ -124,13 +124,13 @@ header nav a{
 }
 
 .parallaxLatestText a:link {
-    color: #40698d
+    color: #158080
 }
 .parallaxLatestText a:visited {
-    color: #40698d
+    color: #158080
 }
 .parallaxLatestText a:hover {
-    color: #40698d
+    color: #158080
 }
 
 .parallaxImageThree {
@@ -140,7 +140,7 @@ header nav a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/parallax-three.jpg");
+    background-image: url("../images/website-background-image.jpeg");
 }
 
 
@@ -151,7 +151,7 @@ header nav a{
  
 footer {
 
-    background-color: #40698d;
+    background-color: #158080;
     width: 100%;
     display: flex;
     align-items: center;
@@ -267,7 +267,7 @@ input {
     header {
         position: fixed;
         z-index: 1;
-        background-color: #40698d;
+        background-color: #158080;
         width: 100%;
         display: inline-flex;
         justify-content: center;
