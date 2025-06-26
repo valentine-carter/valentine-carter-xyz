@@ -1,0 +1,42 @@
+
+/* UNIVERSAL STYLES */
+
+body, html {
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #158080;
+    text-transform: uppercase;
+  }
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25pt;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #158080;
+    text-transform: uppercase;
+  }
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 18pt;
+}
+
+/* TEMPLATE SPECIFIC */
+
+.resume-container {
+    grid-area: resume-container;
+    margin: 50px 75px;
+    padding: 20px;
+    background: #FEFFFF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
