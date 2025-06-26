@@ -16,7 +16,7 @@ h1 {
     text-transform: uppercase;
   }
 
-h2 {
+/* h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 25pt;
     text-align: center;
@@ -24,19 +24,91 @@ h2 {
     color: #158080;
     text-transform: uppercase;
   }
-
+*/ 
 h3 {
     font-family: 'Merriweather', serif;
     font-size: 18pt;
 }
+/* HEADER */
+
+header {
+    position: fixed;
+    z-index: 10;
+    background-color: #158080;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+}
+
+header h3 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+
+
+header nav a{
+    color: white;
+    font-family: 'Merriweather', serif;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 20px;
+
+}
+
+main {
+    z-index: 0;
+    margin: 10% 22% 5% 22%;
+
+}
 
 /* TEMPLATE SPECIFIC */
 
-.resume-container {
-    grid-area: resume-container;
-    margin: 50px 75px;
-    padding: 20px;
+.text-container {
+    margin: 10px;
+    padding: 20px 100px 50px 100px;
     background: #FEFFFF;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     border-radius: 8px;
+}
+.text-container h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 25pt;
+    text-align: left;
+  }
+
+
+/*FOOTER */
+ 
+footer {
+
+    background-color: #158080;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer p {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 0.75em;
+    margin-left: 20px;
+    
+}
+
+
+footer nav a {
+    color: white;
+    font-family: 'Merriweather', serif;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 20px;
+
 }
