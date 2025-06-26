@@ -78,6 +78,7 @@ main {
 .text-container h2 {
     font-family: 'Merriweather', serif;
     font-size: 25pt;
+    color:red;
     text-align: left;
   }
 
