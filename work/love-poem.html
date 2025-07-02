@@ -8,25 +8,54 @@
   <meta name="author" content="Valentine Carter">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="template-styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h3>VALENTINE CARTER</h3>
 
-    <nav>
-      <a href="index.html">home</a>
+  <script language="JavaScript" async>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+<div class="home-link">
+    <a href="index.html" class="active">Valentine Carter</a>
+    
+</div>
+
+  <div class="topnav" id="myTopnav">
+   <a href="index.html#contact">contact</a>
+    
+    
       <a href="print.html">print</a>
       <a href="electronic.html" >electronic</a>
-      <a href="index.html#contact">contact</a>
-    </nav>
-  </header>
+      <a href="about.html">about</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+ 
+  </div>
 
-  <main>
-    <section class="text-container">
+    <div class="top-border"></div>
+ 
+
+  
+    <div class="text-container">
       <h2>Love poem</h2>
       <p>
         this unruly clown tumbles out of a clapped-out car<br>
@@ -44,16 +73,24 @@ like so much holiday luggage thrown down stairs</p>
 
 
       </p>
+    
       
-    </section>
-  </main>
-  <footer>
-    <p>&copy Valentine Carter Ltd 2025</p>
-    <nav>
-      <a href="about.html">about</a>
+    </div>
+  
+<div class="bot-border"></div>
+
+
+
+  <div class="footer">
+        
+    <p class="copyright">&copy Valentine Carter Ltd 2025</p>
+    <p>
+      <a href="index.html">home</a>
       <a href="#sitemap">sitemap</a>
-    </nav>
-  </footer>
+  </p>
+  </div>
+</div>
+<script src="script.js"></script>
 
 
 
