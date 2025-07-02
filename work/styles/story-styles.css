@@ -172,6 +172,7 @@ body {
 
 .indent-1 {
   text-indent: 10%;
+  margin-top: 0%;
 }
 .indent-2 {
   text-indent: 20%;
