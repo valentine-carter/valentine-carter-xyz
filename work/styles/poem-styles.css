@@ -152,10 +152,14 @@ body {
 .text-container p {
   font-family: 'Merriweather', serif;
   font-size: 1em;
+  line-height: 1.6;
   text-align: left;
   
 }
-
+mark {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(5, 5, 5, 0);
+}
 
   hr { 
     display: block;
