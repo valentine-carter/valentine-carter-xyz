@@ -68,13 +68,13 @@ body {
 .home-link {
     grid-area: home-link;
     padding: 14px 16px;
-    background-color: blue;
+    
 }
 
 .home-link a {
-    font-family: 'schoolbell', cursive;
-    color: red;
-    font-size: 1.6em;
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 1em;
     text-decoration: none;
     
 }
@@ -83,18 +83,19 @@ body {
 .topnav {
     grid-area: top-nav;
     overflow: hidden;
-    background-color: blue;
+    
+ 
   }
   
 
   .topnav a {
     float: right;
     display: block;
-    color:red;
-    font-size: 1.6em;
+    color: white;
+    font-size: 1em;
     text-align: center;
     padding: 14px 16px;
-    font-family: 'schoolbell', cursive;
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
     text-decoration: none;
     
   }
@@ -159,11 +160,12 @@ body {
 font-family: 'schoolbell', cursive;
 text-align: center;
 font-size: 2em;
-color: red;
- background-color: blue;
+color: white;
+ 
  padding-top: 10px;
  padding-bottom: 10px;
  margin: 0;
+ text-transform: uppercase;
 }
 
   .text-container {
@@ -178,8 +180,15 @@ color: red;
   font-family: 'schoolbell', cursive;
   font-size: 2.5em;
   text-align: left;
+   text-transform: uppercase;
+  
   
 }
+.text-container h3 {
+  font-family: 'schoolbell', cursive;
+  font-size: 1em;
+}
+
 
 .text-container p {
   font-family: 'Merriweather', serif;
@@ -187,6 +196,8 @@ color: red;
   line-height: 1.6;
   text-align: left;
   
+
+
 }
 mark {
   background-color: rgba(0, 0, 0, 0);
@@ -206,8 +217,8 @@ mark {
 .jump-bar p {
 font-family: 'schoolbell', cursive;
 text-align: center;
-font-size: 1.4em;
-color: red;
+font-size: 1.5em;
+
 }
 
   .bot-border {
