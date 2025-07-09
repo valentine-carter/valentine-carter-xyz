@@ -10,17 +10,24 @@ Orange: #d96031
 /* FONTS
 'Merriweather', 'Times New Roman', Times, serif
 'Raleway', 'helvetica', sans-serif
+'Schoolbell', cursive
 */
 
 
 html {
     font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    font-family: 'Schoolbell', cursive;
+    margin: 0;
+  padding: 0;
+    
     
     
 }
 
 body {
-    background-color: #fefefe;
+    background-image: url("/images/paper_fibers.png");
+    margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -30,7 +37,9 @@ body {
     "home-link"
     "top-border"
      "top-nav"
+     "title-bar"
      "text-container"
+     "jump-bar"
      "bot-border"
      "footer";
   }
@@ -41,7 +50,9 @@ body {
       grid-template-areas:
       "home-link top-nav top-nav top-nav"
       "top-border top-border top-border top-border"
+      "title-bar title-bar title-bar title-bar"
       "text-container text-container text-container text-container"
+      "jump-bar jump-bar jump-bar jump-bar"
       "bot-border bot-border bot-border bot-border"
      "footer footer footer footer";
   }
@@ -56,34 +67,36 @@ body {
 
 .home-link {
     grid-area: home-link;
-   
     padding: 14px 16px;
-    
+    background-color: blue;
 }
 
 .home-link a {
-    font-family: 'Merriweather', 'Times New Roman', Times, serif;
-    color: #245D5D;
+    font-family: 'schoolbell', cursive;
+    color: red;
+    font-size: 1.6em;
     text-decoration: none;
-    font-size: 1em;
+    
 }
 
 
 .topnav {
     grid-area: top-nav;
     overflow: hidden;
+    background-color: blue;
   }
   
 
   .topnav a {
     float: right;
     display: block;
-    color: #626262;
+    color:red;
+    font-size: 1.6em;
     text-align: center;
     padding: 14px 16px;
-    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    font-family: 'schoolbell', cursive;
     text-decoration: none;
-    font-size: 1em;
+    
   }
   
  
@@ -133,18 +146,37 @@ body {
     height: 1px;
   }
 
+
+.title-bar {
+  grid-area: title-bar;
+  margin: 0;
+  width: 100%;
+
+  
+}
+
+.title-bar p {
+font-family: 'schoolbell', cursive;
+text-align: center;
+font-size: 2em;
+color: red;
+ background-color: blue;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ margin: 0;
+}
+
   .text-container {
     grid-area: text-container;
-    background-image: url("/images/paper_fibers.png");
     margin: 20px auto;
-    padding: 50px 100px 70px 100px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    border-radius: 8px;
+    padding: 50px 100px 30px 100px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 8px; */
 }
 
 .text-container h2 {
-  font-family: 'Merriweather', serif;
-  font-size: 1.5em;
+  font-family: 'schoolbell', cursive;
+  font-size: 2.5em;
   text-align: left;
   
 }
@@ -161,17 +193,22 @@ mark {
   color: rgba(5, 5, 5, 0);
 }
 
-  hr { 
-    display: block;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 3px;
-    border-color: red;
-  } 
 
+.jump-bar {
+  grid-area: jump-bar;
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+
+  
+}
+
+.jump-bar p {
+font-family: 'schoolbell', cursive;
+text-align: center;
+font-size: 1.4em;
+color: red;
+}
 
   .bot-border {
     grid-area: bot-border;
@@ -205,7 +242,7 @@ mark {
     text-align: right;
     padding: 4px 16px;
     font-family: 'Merriweather', 'Times New Roman', Times, serif;
-    background-color: #FEFFFF;
+    
     color: #626262;
     text-decoration: none;
     font-size: 0.8em;
