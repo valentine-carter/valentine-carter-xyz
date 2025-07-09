@@ -21,17 +21,15 @@ html {
 
 body {
     background-color: #fefefe;
-    min-height: 100vh;
 }
-
-
 
 .wrapper {
     display: grid;
     
     grid-template-areas:
     "home-link"
-    "top-nav"
+    "top-border"
+     "top-nav"
      "text-container"
      "bot-border"
      "footer";
@@ -39,7 +37,6 @@ body {
 
   @media (min-width: 800px) { 
     .wrapper {
-      display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas:
       "home-link top-nav top-nav top-nav"
@@ -48,7 +45,7 @@ body {
       "bot-border bot-border bot-border bot-border"
      "footer footer footer footer";
   }
-} 
+}
 
 
 
@@ -57,13 +54,9 @@ body {
 
 /* HEADER */
 
-
-
-
 .home-link {
-   grid-area: home-link;
+    grid-area: home-link;
    
-  background-color: #fefefe;
     padding: 14px 16px;
     
 }
@@ -78,8 +71,7 @@ body {
 
 .topnav {
     grid-area: top-nav;
-  background-color: #fefefe;
-    
+    overflow: hidden;
   }
   
 
@@ -141,11 +133,8 @@ body {
     height: 1px;
   }
 
-  
-
   .text-container {
     grid-area: text-container;
-  width: 60%;
     background-image: url("/images/paper_fibers.png");
     margin: 20px auto;
     padding: 50px 100px 70px 100px;
@@ -155,8 +144,8 @@ body {
 
 .text-container h2 {
   font-family: 'Merriweather', serif;
-  font-size: 1.4em;
-  text-align: center;
+  font-size: 1.5em;
+  text-align: left;
   
 }
 
@@ -164,22 +153,12 @@ body {
   font-family: 'Merriweather', serif;
   font-size: 1em;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
+  
 }
-
 mark {
   background-color: rgba(0, 0, 0, 0);
   color: rgba(5, 5, 5, 0);
-}
-
-.indent-1 {
-  text-indent: 10%;
-}
-.indent-2 {
-  text-indent: 20%;
-}
-.indent-3 {
-  text-indent: 30%;
 }
 
   hr { 
