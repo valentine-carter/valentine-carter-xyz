@@ -26,7 +26,6 @@ body {
 
 .wrapper {
     display: grid;
-    
     grid-template-areas:
     "home-link"
     "top-border"
@@ -150,10 +149,14 @@ body {
 font-family: 'schoolbell', cursive;
 text-align: center;
 font-size: 2em;
- padding-top: 10px;
- padding-bottom: 10px;
+ padding-top: 20px;
+ 
  margin: 0;
  text-transform: uppercase;
+}
+
+.title-bar h3 {
+  text-align: center;
 }
 
   .text-container {
