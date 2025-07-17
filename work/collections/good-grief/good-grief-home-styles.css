@@ -140,10 +140,11 @@ body {
     grid-area: masthead;
   margin: 0;
   width: 100%;
-  background-color: rgba(112, 177, 103, 0.5)
+  background-color: rgba(75,143,77)
   }
   .masthead p {
 font-family: 'schoolbell', cursive;
+color: white;
 text-align: center;
 font-size: 2.5em;
  padding-top: 20px;
@@ -153,6 +154,7 @@ font-size: 2.5em;
 .masthead h3 {
   text-align: center;
   font-size: 1.5em;
+  color: white;
 }
 
 .contents-list {
@@ -166,6 +168,7 @@ font-size: 2.5em;
 }
 .contents-list ul li {
   list-style: none;
+  font-size: 1.1em;
   line-height: 1.8em;
 }
 .contents-list a {
@@ -173,11 +176,11 @@ font-size: 2.5em;
 }
 
 .contents-list a:visited {
-  color: blueviolet;
+  color: rgba(75,143,77)
 }
 
 .contents-list a:hover {
-  color: red;
+  color: rgba(114,158,206)
 } 
 
 
@@ -195,12 +198,24 @@ font-size: 2.5em;
 }
 
 .intro-text p {
-  font-family: 'Merriweather', serif;
-  font-size: 1em;
+  font-family: 'schoolbell', cursive;
+  font-size: 1.1em;
   line-height: 1.6;
   text-align: left;
   
 }
+.intro-text a {
+  text-decoration: none;
+  color: rgba(75,143,77)
+}
+
+.intro-text a:visited {
+  color: rgba(75,143,77)
+}
+
+.intro-text a:hover {
+  color: rgba(114,158,206)
+} 
 
 
 /*
