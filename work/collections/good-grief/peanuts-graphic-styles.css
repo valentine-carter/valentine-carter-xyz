@@ -161,7 +161,6 @@ font-size: 2em;
 
   .text-container {
     grid-area: text-container;
-    background-image: url("/images/paper_fibers.png");
     margin: 20px auto;
     padding: 50px 100px 70px 100px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -171,7 +170,7 @@ font-size: 2em;
 .text-container h2 {
   font-family: 'Merriweather', serif;
   font-size: 1.5em;
-  text-align: left;
+  text-align: center;
   
 }
 
