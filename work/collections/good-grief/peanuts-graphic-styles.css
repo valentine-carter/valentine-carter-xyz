@@ -215,6 +215,20 @@ text-align: center;
 font-size: 1.2em;
 }
 
+.jump-bar a {
+  color: black;
+  text-decoration: none;
+}
+
+.jump-bar a:visited {
+  color: black;
+}
+
+.jump-bar a:hover {
+  color: black;
+  text-decoration: underline;
+} 
+
   .bot-border {
     grid-area: bot-border;
     background-color: #245D5D;
