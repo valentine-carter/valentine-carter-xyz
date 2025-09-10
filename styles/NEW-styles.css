@@ -135,39 +135,69 @@ body {
 
   .text-container {
     grid-area: text-container;
-    background-image: url("/images/paper_fibers.png");
+   
     margin: 20px auto;
     padding: 50px 100px 70px 100px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.3);
+     background-image: url("/images/paper_fibers.png");
+    border-radius: 8px; */
+}
+
+.text-container h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3em;
+  text-align: center;
+  color: #0c4c4c;
+  
 }
 
 .text-container h2 {
   font-family: 'Merriweather', serif;
   font-size: 1.5em;
-  text-align: left;
+  text-align: center;
+  color: #0c4c4c;
+  
+}
+
+.text-container h3 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: #245D5D;
   
 }
 
 .text-container p {
   font-family: 'Merriweather', serif;
   font-size: 1em;
-  text-align: left;
+  text-align: center;
+  
   
 }
 
 
-  hr { 
-    display: block;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 3px;
-    border-color: red;
-  } 
+.text-container ul li {
+  list-style: none;
+  text-align: center;
 
+}
+.text-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.text-container a:visited {
+  color: black'
+}
+
+.text-container a:hover {
+  color: black;
+  text-decoration: underline;
+} 
+
+mark {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(5, 5, 5, 0);
+}
 
   .bot-border {
     grid-area: bot-border;
