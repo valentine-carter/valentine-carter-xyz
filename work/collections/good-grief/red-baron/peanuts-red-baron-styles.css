@@ -150,60 +150,99 @@ font-family: 'schoolbell', cursive;
 text-align: center;
 font-size: 2em;
  padding-top: 20px;
- 
+ color:#171616;;
  margin: 0;
  text-transform: uppercase;
 }
 
 .title-bar h3 {
   text-align: center;
+  color: #171616;
 }
 
-  .text-container {
+  .poem-container {
+    
     grid-area: text-container;
-    background-image: url("/images/paper_fibers.png");
+    position: relative;
+     overflow: hidden;
     margin: 20px auto;
-    padding: 50px 100px 70px 100px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    border-radius: 8px;
+    width: 65%;
+    height: 400px;
+    background-image: url("blue-sky.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.text-container h2 {
+ .poem-container h2 {
   font-family: 'Merriweather', serif;
   font-size: 1.5em;
-  text-align: left;
+  text-align: center;
+  color: #171616;
+ 
   
 }
 
-.text-container p {
+@keyframes slideInOut {
+  0%   { transform: translateX(100%); opacity: 0; }
+  20%  { transform: translateX(0); opacity: 1; }
+  80%  { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slideInOutReverse {
+  0%   { transform: translateX(-100%); opacity: 0; }
+  20%  { transform: translateX(0); opacity: 1; }
+  80%  { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+
+.line {
+  
+  width: 100%;
+  text-align: center;
   font-family: 'Merriweather', serif;
   font-size: 1em;
-  line-height: 1.6;
-  text-align: left;
-  
+  color: #171616;
+  opacity: 0;
 }
 
+.line1 {
+  top: 0%;
+  animation: slideInOut 10s ease-in-out 0s infinite;
+}
+.line2 {
+  top: 16.6%;
+  animation: slideInOutReverse 10s ease-in-out 1s infinite;
+}
+.line3 {
+  top: 33.2%;
+  animation: slideInOut 10s ease-in-out 2s infinite;
+}
+.line4 {
+  top: 49.8%;
+  animation: slideInOutReverse 10s ease-in-out 3s infinite;
+}
+.line5 {
+  top: 66.4%;
+  animation: slideInOut 10s ease-in-out 4s infinite;
+}
+.line6 {
+  top: 83%;
+  animation: slideInOutReverse 10s ease-in-out 5s infinite;
+}
 
 
 
 mark {
   background-color: rgba(0, 0, 0, 0);
-  color: rgba(5, 5, 5, 0);
+  color: red;
 }
 
 
 
 
-  hr { 
-    display: block;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 3px;
-    
-  } 
+
 
 .jump-bar {
   grid-area: jump-bar;

@@ -30,9 +30,9 @@ body {
     "home-link"
     "top-border"
      "top-nav"
-     "title-bar"
-     "text-container"
-     "jump-bar"
+     "masthead"
+     "intro-text"
+     "contents-list"
      "bot-border"
      "footer";
   }
@@ -43,9 +43,8 @@ body {
       grid-template-areas:
       "home-link top-nav top-nav top-nav"
       "top-border top-border top-border top-border"
-      "title-bar title-bar title-bar title-bar"
-      "text-container text-container text-container text-container"
-      "jump-bar jump-bar jump-bar jump-bar"
+      "masthead masthead masthead masthead"
+      "intro-text intro-text contents-list contents-list"
       "bot-border bot-border bot-border bot-border"
      "footer footer footer footer";
   }
@@ -137,12 +136,94 @@ body {
     height: 1px;
   }
 
+  .masthead {
+    grid-area: masthead;
+  margin: 0;
+  width: 100%;
+  background-color: rgba(75,143,77)
+  }
+  .masthead p {
+font-family: 'schoolbell', cursive;
+color: white;
+text-align: center;
+font-size: 2.5em;
+ padding-top: 20px;
+ margin: 0;
+ text-transform: uppercase;
+}
+.masthead h3 {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.contents-list {
+  grid-area: contents-list;
+  padding: 70px 100px 50px 100px;
+
+}
+.contents-list h3 {
+  text-align: center;
+  font-size: 1.6em;
+}
+.contents-list ul li {
+  list-style: none;
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+.contents-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.contents-list a:visited {
+  color: rgba(75,143,77)
+}
+
+.contents-list a:hover {
+  color: rgba(114,158,206)
+} 
+
+
+.intro-text {
+  grid-area: intro-text;
+  background-image: url("/images/paper_fibers.png");
+  margin: 20px;
+  padding: 50px 100px 70px 100px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 8px;
+}
+.intro-text h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.intro-text p {
+  font-family: 'schoolbell', cursive;
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: left;
+  
+}
+.intro-text a {
+  text-decoration: none;
+  color: rgba(75,143,77)
+}
+
+.intro-text a:visited {
+  color: rgba(75,143,77)
+}
+
+.intro-text a:hover {
+  color: rgba(114,158,206)
+} 
+
+
+/*
   .title-bar {
   grid-area: title-bar;
   margin: 0;
   width: 100%;
-
-  
 }
 
 .title-bar p {
@@ -157,7 +238,7 @@ font-size: 2em;
 
 .title-bar h3 {
   text-align: center;
-}
+} */
 
   .text-container {
     grid-area: text-container;
@@ -182,28 +263,12 @@ font-size: 2em;
   text-align: left;
   
 }
-
-
-
-
 mark {
   background-color: rgba(0, 0, 0, 0);
   color: rgba(5, 5, 5, 0);
 }
 
 
-
-
-  hr { 
-    display: block;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 3px;
-    
-  } 
 
 .jump-bar {
   grid-area: jump-bar;
