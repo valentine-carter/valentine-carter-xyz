@@ -31,6 +31,7 @@ body {
     "top-border"
      "top-nav"
      "text-container"
+     "coffee"
      "bot-border"
      "footer";
   }
@@ -42,6 +43,7 @@ body {
       "home-link top-nav top-nav top-nav"
       "top-border top-border top-border top-border"
       "text-container text-container text-container text-container"
+      "coffee coffee coffee coffee"
       "bot-border bot-border bot-border bot-border"
      "footer footer footer footer";
   }
@@ -145,8 +147,8 @@ body {
 
 .text-container h1 {
   font-family: 'Merriweather', serif;
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.75em;
+  text-align: left;
   color: #0c4c4c;
   
 }
@@ -154,14 +156,14 @@ body {
 .text-container h2 {
   font-family: 'Merriweather', serif;
   font-size: 1.2em;
-  text-align: center;
+  text-align: left;
   color: #0c4c4c;
   
 }
 
 .text-container h3 {
   font-family: 'Merriweather', serif;
-  text-align: center;
+  text-align: left;
   color: #245D5D;
   
 }
@@ -177,7 +179,7 @@ body {
 
 .text-container ul li {
   list-style: none;
-  text-align: center;
+  text-align: left;
 
 }
 .text-container a {
@@ -204,6 +206,14 @@ mark {
     background-color: #245D5D;
     height: 1px;
   }
+
+  .coffee {
+    grid-area: coffee;
+    width: fit-content;
+    margin: 1em auto;
+    
+}
+
 
 .footer {
   grid-area: footer;

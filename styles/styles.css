@@ -245,6 +245,13 @@ input {
     clear: both;
 }
 
+.coffee {
+    
+    width: fit-content;
+    margin: 1em auto;
+    
+}
+
 
 /* RESPONSIVE FOR MOBILE ETC */
 
